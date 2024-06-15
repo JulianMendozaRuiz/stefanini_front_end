@@ -1,22 +1,25 @@
-module.exports = class Client {
-  numero_documento: String | undefined;
-  primer_nombre: String | undefined;
-  segundo_nombre: String | undefined;
-  primer_apellido: String | undefined;
-  segundo_apellido: String | undefined;
-  telefono: String | undefined;
-  direccion: String | undefined;
-  ciudad_de_residencia: String | undefined;
+export default class Client {
+  tipo_de_documento: string | undefined;
+  numero_documento: string | undefined;
+  primer_nombre: string | undefined;
+  segundo_nombre: string | undefined;
+  primer_apellido: string | undefined;
+  segundo_apellido: string | undefined;
+  telefono: string | undefined;
+  direccion: string | undefined;
+  ciudad_de_residencia: string | undefined;
   constructor(
-    pNumeroDocumento: String,
-    pPrimerNombre: String,
-    pSegundoNombre: String,
-    pPrimerApellido: String,
-    pSegundoApellido: String,
-    pTelefono: String,
-    pDireccion: String,
-    pCiudadDeResidencia: String
+    pTipoDeDocumento: string,
+    pNumeroDocumento: string,
+    pPrimerNombre: string,
+    pSegundoNombre: string,
+    pPrimerApellido: string,
+    pSegundoApellido: string,
+    pTelefono: string,
+    pDireccion: string,
+    pCiudadDeResidencia: string
   ) {
+    this.tipo_de_documento = pTipoDeDocumento;
     this.numero_documento = pNumeroDocumento;
     this.primer_nombre = pPrimerNombre;
     this.segundo_nombre = pSegundoNombre;
@@ -26,4 +29,4 @@ module.exports = class Client {
     this.direccion = pDireccion;
     this.ciudad_de_residencia = pCiudadDeResidencia;
   }
-};
+}

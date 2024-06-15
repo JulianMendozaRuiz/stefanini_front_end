@@ -1,1 +1,140 @@
-<p>client-info works!</p>
+<button type="button" class="btn btn-primary go-back" (click)="goBack()">
+  Volver atrás
+</button>
+<div class="client-info-container">
+  <div class="column form-container">
+    <h4>Información básica</h4>
+    <div class="container">
+      <div class="">
+        <form class="client-info-form column" [formGroup]="clientInfoForm">
+          <div class="row client-info-input">
+            <label for="firstLastName" class="form-label label"
+              >Primer apellido</label
+            >
+            <input
+              id="firstLastName"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="firstLastName"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="secondLastName" class="form-label label"
+              >Segundo apellido</label
+            >
+            <input
+              id="secondLastName"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="secondLastName"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="firstName" class="form-label label"
+              >Primer nombre</label
+            >
+            <input
+              id="firstName"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="firstName"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="secondName" class="form-label label"
+              >Segundo nombre</label
+            >
+            <input
+              id="secondName"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="secondName"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="documentType" class="form-label label"
+              >Tipo de documento</label
+            >
+            <input
+              id="documentType"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="documentType"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="documentNumber" class="form-label label"
+              >Número de documento</label
+            >
+            <input
+              id="documentNumber"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="documentNumber"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="phone" class="form-label label"
+              >Número de teléfono</label
+            >
+            <input
+              id="phone"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="phone"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="city" class="form-label label"
+              >Ciudad de residencia</label
+            >
+            <input
+              id="city"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="city"
+              readonly
+            />
+          </div>
+          <div class="row client-info-input">
+            <label for="address" class="form-label label"
+              >Dirección de residencia</label
+            >
+            <input
+              id="address"
+              class="form-control form-input"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              formControlName="address"
+              readonly
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
