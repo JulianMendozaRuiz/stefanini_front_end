@@ -22,7 +22,6 @@ export class ClientInfoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.client);
     this.clientInfoForm.patchValue({
       firstName: this.client.primer_nombre,
       secondName: this.client.segundo_nombre,

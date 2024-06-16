@@ -51,6 +51,21 @@
       "<rootDir>/dist/"
     ],
     "globals": {
+      "restoreMocks": true,
+      "preset": "jest-preset-angular",
+      "setupFilesAfterEnv": [
+        "<rootDir>/src/setup.jest.ts"
+      ],
+      "roots": [
+        "<rootDir>"
+      ],
+      "modulePaths": [
+        "<rootDir>"
+      ],
+      "moduleDirectories": [
+        "node_modules",
+        "src"
+      ],
       "ts-jest": {
         "tsConfig": "<rootDir>/tsconfig.spec.json",
         "stringifyContentPathRegex": "\\.html$"
