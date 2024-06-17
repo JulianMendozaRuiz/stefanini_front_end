@@ -8,9 +8,15 @@ import { ClientInfoComponent } from './pages/client/client-info/client-info.comp
 import { SearchClientComponent } from './pages/client/search-client/search-client.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OnlyNumberDirective } from './shared/directives/only-number.directive';
 
 @NgModule({
-  declarations: [AppComponent, ClientInfoComponent, SearchClientComponent],
+  declarations: [
+    AppComponent,
+    ClientInfoComponent,
+    SearchClientComponent,
+    OnlyNumberDirective,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -20,8 +20,8 @@
             formControlName="documentType"
           >
             <option selected>Seleccione una opción</option>
-            <option *ngFor="let docType of documentTypes" value="docType">
-              {{ docType }}
+            <option *ngFor="let docType of documentTypes">
+              {{ docType.name }}
             </option>
           </select>
         </div>
@@ -31,10 +31,10 @@
           >
           <input
             type="text"
-            inputmode="numeric"
             class="form-control input-border"
             id="numero-de-documento"
             formControlName="documentNumber"
+            onlyNumber
           />
         </div>
         <div [align]="'center'">
